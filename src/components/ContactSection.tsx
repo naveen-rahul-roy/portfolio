@@ -1,6 +1,7 @@
 import { Mail, MapPin, Github, Linkedin, Send } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useState } from 'react';
+import emailjs from 'emailjs-com';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -9,16 +10,30 @@ const ContactSection = () => {
     message: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    // Create mailto link with form data
-    const subject = `Portfolio Contact from ${formData.name}`;
-    const body = `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`;
-    const mailtoLink = `mailto:naveenrahulroy1@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    window.location.href = mailtoLink;
+
+    emailjs.send(
+      'service_jat2kxd', // Your EmailJS Service ID
+      'template_077tng8', // Your EmailJS Template ID
+      {
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+      },
+      'geCK9kK6LMQ1SnuKr' // Your EmailJS Public Key
+    )
+    .then(() => {
+      alert('Message sent successfully!');
+      setFormData({ name: '', email: '', message: '' });
+    })
+    .catch((error) => {
+      console.error('Email send error:', error);
+      alert('Failed to send message.');
+    });
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
