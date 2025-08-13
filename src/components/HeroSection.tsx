@@ -67,13 +67,9 @@ const HeroSection = () => {
             >
               <Linkedin size={24} />
             </a>
-            <a
-              onClick={(e) => {
-                e.preventDefault();
-                scrollToContact();
-              }}
-              href="#contact"
-              className="p-3 rounded-full border border-border hover:border-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110 cursor-pointer"
+            <a 
+              href="mailto:naveenrahulroy1@gmail.com"
+              className="p-3 rounded-full border border-border hover:border-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110"
             >
               <Mail size={24} />
             </a>
@@ -90,3 +86,5 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
+
