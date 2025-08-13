@@ -60,10 +60,7 @@ const AboutSection = () => {
           <div className="tech-card max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold mb-6">Professional Summary</h3>
             <p className="text-muted-foreground leading-relaxed">
-              Currently pursuing B.Tech in Computer Science and Design at SRKR Engineering College 
-              with a GPA of 8.12. Eager to contribute to DevOps teams while growing technically 
-              in a collaborative environment. Passionate about automation, continuous integration, 
-              and building reliable, scalable infrastructure solutions.
+             A recent Computer Science graduate from SRKR Engineering College with a GPA of 8.12. Eager to contribute to DevOps teams while advancing technical expertise in a collaborative environment. Passionate about automation, continuous integration, and building reliable, scalable infrastructure solutions.
             </p>
           </div>
         </div>

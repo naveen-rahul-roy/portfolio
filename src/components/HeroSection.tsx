@@ -22,7 +22,7 @@ const HeroSection = () => {
               </span>
             </h1>
             <h2 className="text-2xl md:text-3xl text-muted-foreground mb-6">
-              DevOps Engineer
+              Aspiring DevOps Engineer
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
               Passionate about CI/CD pipelines, AWS infrastructure automation, and 
@@ -44,7 +44,7 @@ const HeroSection = () => {
               size="lg"
               asChild
             >
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="https://drive.google.com/file/d/1SP6A8Pj0j4Dv6x9I9yaVEZWj040EtijK/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
                 Download Resume
               </a>
             </Button>

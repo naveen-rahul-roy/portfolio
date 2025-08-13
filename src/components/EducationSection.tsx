@@ -46,7 +46,7 @@ const EducationSection = () => {
                 </div>
                 <p className="text-muted-foreground leading-relaxed">
                   Comprehensive education in computer science fundamentals with a focus on modern 
-                  design principles. Specialized coursework in cloud computing, software engineering, 
+                  design principles. Specialized coursework in cloud computing,DevOps and software engineering, 
                   and system architecture.
                 </p>
               </div>
