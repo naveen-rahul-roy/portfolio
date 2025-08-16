@@ -44,7 +44,7 @@ const HeroSection = () => {
               size="lg"
               asChild
             >
-              <a href="https://drive.google.com/file/d/1SP6A8Pj0j4Dv6x9I9yaVEZWj040EtijK/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+              <a href="https://drive.google.com/file/d/1hvyVkhPih8lJUADdPnLtVWedH_JaVOdO/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                 Download Resume
               </a>
             </Button>
